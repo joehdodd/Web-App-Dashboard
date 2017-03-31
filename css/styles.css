@@ -1,0 +1,91 @@
+/*========================
+         GLOBALS
+========================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*========================
+         HEADER
+========================*/
+
+.head {
+  background: #43aabd;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.head-list {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*========================
+          NAV
+========================*/
+
+.nav {
+  background: #21555E;
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+  height: 100px;
+}
+
+.nav-list {
+  display: flex;
+  margin-top: 60px;
+}
+
+.nav-list li {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+#_x31_0_20_ {
+  fill: #fff;
+}
+
+/*========================
+        M QUERIES
+========================*/
+
+@media screen and (min-width: 768px) {
+
+  .head-list {
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .head-text {
+    margin-right: auto;
+  }
+
+  .nav {
+    width: 4em;
+    height: 100vh;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    display: block;
+  }
+
+}
