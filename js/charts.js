@@ -19,7 +19,8 @@ let mainTrafficChart = new Chart(mainTraffic, {
                 }
             }]
         },
-        legend: {display: false}
+        legend: {display: false},
+        responsive: true,
     }
 
 });
@@ -30,7 +31,7 @@ let dailyTrafficChart = new Chart(dailyTraffic, {
     data: {
         labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
         datasets: [{
-            data: [75, 100, 200, 125, 150, 200, 300],
+            data: [75, 100, 200, 325, 150, 600, 300],
             borderWidth: 1,
             tension: 0,
             backgroundColor: 'rgba(109, 170, 173, 0.25)',
@@ -46,6 +47,7 @@ let dailyTrafficChart = new Chart(dailyTraffic, {
             }]
         },
         legend: {display: false},
+        responsive: true,
     }
 
 });
@@ -56,22 +58,23 @@ let mobileTrafficChart = new Chart(mobileTraffic, {
     data: {
         labels: ['Phones', 'Tablets', 'Desktop'],
         datasets: [{
-            data: [15,15, 70],
+            data: [15, 15, 70],
             borderWidth: 1,
             backgroundColor: [
               'rgb(109, 170, 173)',
               'rgb(52, 91, 93)',
               'rgb(60, 100, 125)'
-            ]
+            ],
+            responsive: true,
         }]
     },
     options: {
         legend: {display: true,
-                 position: 'right',
-                 labels: {boxWidth:  15,}
+                 position: 'bottom',
+                 labels: {boxWidth: 15,}
                },
-        cutoutPercentage:  60,
+        cutoutPercentage: 45,
         responsive: true,
-        mainAspectRatio:false,
+        mainAspectRatio: true,
     }
 });

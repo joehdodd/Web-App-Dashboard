@@ -4,9 +4,3 @@ alertBar.addEventListener('click', (e) => {
     alertBar.style.opacity = '0';
   }
 });
-
-/* alert bar close jQuery
-$('#close').click( () => {
-  $('#alertBar').fadeOut('1000');
-});
-*/
