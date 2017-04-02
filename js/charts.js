@@ -45,7 +45,7 @@ let dailyTrafficChart = new Chart(dailyTraffic, {
                 }
             }]
         },
-        legend: {display: false}
+        legend: {display: false},
     }
 
 });
