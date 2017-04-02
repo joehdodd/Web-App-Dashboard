@@ -4,37 +4,63 @@
   <meta charset="UTF-8">
   <title>The Web App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-  <body>
+<body>
   <header class="head">
     <ul class="head-list">
-      <li class="head-text">Your<span>App</span><span>&trade;</span></li>
-      <li><img src="icons/icon-bell.svg" alt="Notifications" class="icon"/>
-      <li><img src="img/me.jpg" alt="Profile Photo" class="profile-photo"/>Joe Photo</li>
-      <li class="name">Joe Dodd</li>
+      <li class="head-text"><span class="bold">Your<span class="light">App</span><span class="light">&trade;</span></li>
+      <li class="notifyBell"><img src="icons/icon-bell.svg" alt="Notifications"/></li>
+      <li class="avatar"><img class="avatar" src="img/joe-dodd-avatar.jpg" alt="Profile Photo"/></li>
+      <li class="name light">Joe Dodd</li>
     </ul>
   </header>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="active"><a href="#" id="nav-dash"><img src="icons/icon-dashboard.svg" alt="Dashboard"  class="icon"/></a></li>
-          <li><a href="#" id="nav-members"><img src="icons/icon-members.svg" alt="Members"  class="icon"/></a></li>
-          <li><a href="#" id="nav-visits"><img src="icons/icon-visits.svg" alt="Visits"  class="icon"/></a></li>
-          <li><a href="#" id="nav-settings"><img src="icons/icon-settings.svg" alt="Settings"  class="icon"/></a></li>
-        </ul>
-      </nav>
-<!--main area start-->
-  <div class="container">
-  <div class="dashboard">
-    <span class="dash-txt">Dashboard</span>
-    <div class="searchBox">
-      <input type="textarea">
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="activeNav"><a href="#" id="nav-dash"><img src="icons/icon-dashboard.svg" alt="Dashboard"  class="icon"/></a></li>
+      <li><a href="#" id="nav-members"><img src="icons/icon-members.svg" alt="Members"  class="icon"/></a></li>
+      <li><a href="#" id="nav-visits"><img src="icons/icon-visits.svg" alt="Visits"  class="icon"/></a></li>
+      <li><a href="#" id="nav-settings"><img src="icons/icon-settings.svg" alt="Settings"  class="icon"/></a></li>
+    </ul>
+  </nav>
+  <!--main area start-->
+  <main>
+    <div class="container">
+      <div class="dashboard">
+        <h2 class="dash-txt">Dashboard</h2>
+         <input type="text" id="searchBox" name="searchBox" placeholder="Search">
+      </div>
+      <div id="alertBar">
+        <span class="bold alert1">Alert</span><span class="light">You've got 80 billion notifications!</span><img id="close" src="icons/icon-x.svg" alt="close" class="icon-x"/>
+      </div>
+      <div class="box">
+        <div id="traffic-header">
+          <span class="bold traffic-heading">TRAFFIC</span>
+          <a href="#">Hourly</a>
+          <a href="#">Daily</a>
+          <a href="#" class="activeTraf">Weekly</a>
+          <a href="#">Monthly</a>
+        </div>
+        <canvas id="mainChart"></canvas>
+      </div>
+      <div class="box flex">
+        <div>
+          <span class="bold traffic-heading">DAILY TRAFFIC</span>
+          <canvas id="dailyChart"></canvas>
+        </div>
+        <div>
+          <span class="bolx traffic-heading">MOBILE USERS</span>
+          <canvas id="mobileChart"></canvas>
+        </div>
+      </div>
+    <!--end container-->
     </div>
-  </div>
-  </div
-    <script src=""></script>
-    <script src="app.js"></script>
-  </body>
+  </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+</body>
 </html>
