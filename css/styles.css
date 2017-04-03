@@ -233,7 +233,7 @@ a {
   margin: 20px 5px;
   background: #e8e8e8;
   border-radius: 4px;
-  /*box-shadow: 0px 2px 12px 0px #545454;*/
+  box-shadow: 0px 1px 8px 0px #545454;
 }
 
 .social-s-box {
