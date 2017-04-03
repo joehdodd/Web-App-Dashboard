@@ -35,10 +35,10 @@ let dailyTrafficChart = new Chart(dailyTraffic, {
             borderWidth: 1,
             tension: 0,
             backgroundColor: 'rgba(109, 170, 173, 0.25)',
-            responsive: true,
         }]
     },
     options: {
+    maintainAspectRatio: false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -65,16 +65,15 @@ let mobileTrafficChart = new Chart(mobileTraffic, {
               'rgb(52, 91, 93)',
               'rgb(60, 100, 125)'
             ],
-            responsive: true,
         }]
     },
     options: {
         legend: {display: true,
-                 position: 'bottom',
-                 labels: {boxWidth: 15,}
+                 position: 'right',
+                 labels: {boxWidth: 10,}
                },
         cutoutPercentage: 45,
         responsive: true,
-        mainAspectRatio: true,
+        maintainAspectRatio: false,
     }
 });

@@ -101,6 +101,10 @@ a {
   padding: 1em;
 }
 
+.activeNav {
+  border-left: 2px solid #6daaad;
+}
+
 /*========================
         CONTAINERS
 ========================*/
@@ -164,15 +168,17 @@ a {
 }
 
 #searchBox {
+  font-size: 1em;
+  padding-left: .5em;
   height: 40px;
   width: 50%;
   border-radius: 4px;
-  outline: none;
   border: 1px solid lightgray;
+  outline: none;
 }
 
 /*========================
-          CHARTS
+   CHART HEADER & LINKS
 ========================*/
 
 #traffic-header {
@@ -181,12 +187,30 @@ a {
   margin-bottom: 10px;
 }
 
-.traffic-heading {
+#traffic-header span {
   margin-right: auto;
 }
 
 #traffic-header a {
-  margin-right: 5px;
+  font-size: .85em;
+  margin-right: 15px;
+  padding: .5em;
+  transition: transform .25s;
+}
+
+#traffic-header a:hover {
+  transform: scale(1.15);
+}
+
+#traffic-header a:active {
+  transform: scale(1);
+}
+
+.activeTraf {
+  color: #fff;
+  background: #4daf83;
+  border-radius: 200px;
+  box-shadow: 0px 1px 4px 0px #333;
 }
 
 #trafficChart {
@@ -194,16 +218,14 @@ a {
 }
 
 /*========================
-      ACTIVE STATES
+      SOCIAL STATS
 ========================*/
 
-.activeNav {
-  border-left: 2px solid #6daaad;
+.social-box {
+  display: flex;
 }
 
-.activeTraf {
 
-}
 /*========================
         M QUERIES
 ========================*/
