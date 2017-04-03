@@ -229,6 +229,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex: 1 100px;
+  padding: 1em;
+  margin: 20px 5px;
+  background: #e8e8e8;
+  border-radius: 4px;
+  /*box-shadow: 0px 2px 12px 0px #545454;*/
 }
 
 .social-s-box {
