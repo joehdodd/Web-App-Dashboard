@@ -4,7 +4,7 @@ let mainTrafficChart = new Chart(mainTraffic, {
     data: {
         labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10','11-17', '18-24','25-31'],
         datasets: [{
-            data: [500, 750, 1000, 750, 500, 250, 725, 900, 1000, 500, 250],
+            data: [150, 250, 500, 250, 200, 250, 500, 100, 250, 500, 250],
             borderWidth: 1,
             tension: 0,
             backgroundColor: 'rgba(109, 170, 173, 0.25)',
