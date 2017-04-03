@@ -117,7 +117,11 @@ a {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.cont-head {
+  margin: 10px 5px;
 }
 
 .box {
@@ -126,8 +130,7 @@ a {
 }
 
 .flex-item {
-  flex: 300px;
-  margin: 5px;
+  flex: 1 200px;
 }
 
 /*========================
@@ -135,12 +138,13 @@ a {
 ========================*/
 
 #alertBar {
-    height: 40px;
-    background: #6daaad;
     display: flex;
-    border-radius: 4px;
     align-items: center;
     padding: 1em;
+    margin: 10px 5px;
+    height: 40px;
+    background: #6daaad;
+    border-radius: 4px;
     color: #fff;
 }
 
@@ -223,8 +227,14 @@ a {
 
 .social-box {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1 100px;
 }
 
+.social-s-box {
+  display: flex;
+  flex-direction: column;
+}
 
 /*========================
         M QUERIES
@@ -256,9 +266,8 @@ a {
 
   .box {
     padding: 1em;
+    margin: 10px 5px;
     background: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 4px;
     box-shadow: 0px 2px 12px 0px #545454;
   }
@@ -267,6 +276,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 5px;
   }
 
   #alertBar {

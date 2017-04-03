@@ -4,11 +4,10 @@ let mainTrafficChart = new Chart(mainTraffic, {
     data: {
         labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10','11-17', '18-24','25-31'],
         datasets: [{
-            data: [500, 1500, 1000, 1500, 1500, 2000, 1000, 1500, 1000, 500, 500],
+            data: [500, 750, 1000, 750, 500, 250, 725, 900, 1000, 500, 250],
             borderWidth: 1,
             tension: 0,
             backgroundColor: 'rgba(109, 170, 173, 0.25)',
-            responsive: true,
         }]
     },
     options: {
@@ -19,8 +18,9 @@ let mainTrafficChart = new Chart(mainTraffic, {
                 }
             }]
         },
-        legend: {display: false},
-        responsive: true,
+        legend: { display: false },
+        maintainAspectRatio: true,
+        responsive: true
     }
 
 });
@@ -31,14 +31,13 @@ let dailyTrafficChart = new Chart(dailyTraffic, {
     data: {
         labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
         datasets: [{
-            data: [75, 100, 200, 325, 150, 600, 300],
+            data: [75, 100, 200, 325, 150, 100, 300],
             borderWidth: 1,
             tension: 0,
             backgroundColor: 'rgba(109, 170, 173, 0.25)',
         }]
     },
     options: {
-    maintainAspectRatio: false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -48,6 +47,7 @@ let dailyTrafficChart = new Chart(dailyTraffic, {
         },
         legend: {display: false},
         responsive: true,
+        maintainAspectRatio: true
     }
 
 });
@@ -70,10 +70,10 @@ let mobileTrafficChart = new Chart(mobileTraffic, {
     options: {
         legend: {display: true,
                  position: 'right',
-                 labels: {boxWidth: 10,}
-               },
+                 labels: { boxWidth: 10, }
+                },
         cutoutPercentage: 45,
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
     }
 });
