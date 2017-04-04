@@ -127,6 +127,9 @@ a {
 .box {
   margin-top: 15px;
   margin-bottom: 15px;
+  background: #fff;
+  border-radius: 4px;
+  padding: .25em;
 }
 
 .flex-item {
@@ -246,12 +249,6 @@ a {
   margin-bottom: 5px;
 }
 
-.social-stat {
-  font-size: 2em;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 .social-icon {
   margin: 5px 10px 5px 0px;
   fill: #fff;
@@ -271,6 +268,10 @@ a {
   border-bottom: 1px solid lightgray;
 }
 
+.inner-flex a {
+  font-size: .9em;
+}
+
 .mem-img {
   border-radius: 50%;
   width: 40px;
@@ -279,7 +280,7 @@ a {
 }
 
 .mem-info {
-  font-size: .8em;
+  font-size: .9em;
   margin-top: 0px;
   margin-bottom: 2.5px;
 }
@@ -334,6 +335,12 @@ a {
 
   #alertBar {
     box-shadow: 0px 2px 12px 0px #545454;
+  }
+
+  .social-stat {
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
 }
