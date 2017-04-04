@@ -147,7 +147,7 @@ main {
     display: flex;
     align-items: center;
     padding: 1em;
-    margin-bottom: 10px;
+    margin: 20px 5px;
     height: 40px;
     background: #6daaad;
     border-radius: 4px;
