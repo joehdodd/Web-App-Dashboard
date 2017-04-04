@@ -125,11 +125,11 @@ a {
 }
 
 .box {
-  margin-top: 15px;
   margin-bottom: 15px;
   background: #fff;
   border-radius: 4px;
-  padding: .25em;
+  padding: .5em;
+  box-shadow: 0px 1px 4px 0px #545454;
 }
 
 .flex-item {
@@ -144,7 +144,7 @@ a {
     display: flex;
     align-items: center;
     padding: 1em;
-    margin: 10px 5px;
+    margin-bottom: 10px;
     height: 40px;
     background: #6daaad;
     border-radius: 4px;
