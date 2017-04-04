@@ -271,19 +271,21 @@ a {
   border-bottom: 1px solid lightgray;
 }
 
-.member {
+.mem-img {
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
 
 .mem-info {
+  font-size: .8em;
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 2.5px;
 }
 
 .mem-date {
+  font-size: .8em;
   margin-left: auto;
 }
 
