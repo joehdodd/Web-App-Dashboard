@@ -23,6 +23,6 @@ send.addEventListener('click', () => {
   } else {
     success.style.display = 'flex';
   }
-  $('#error').delay(3500).fadeOut(1000);
-  $('#success').delay(3500).fadeOut(1000);
+  $('#error').delay(1000).fadeOut(500);
+  $('#success').delay(1000).fadeOut(500);
 });

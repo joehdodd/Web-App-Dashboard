@@ -73,7 +73,7 @@ a {
     position: absolute;
     z-index: 10;
     right: 158px;
-    content: " ";
+    content: "";
     width: .5em;
     height: .5em;
     background: #7ad38b;
@@ -340,6 +340,10 @@ main {
   background: rgb(52, 91, 93);
 }
 
+#message {
+  position: relative;
+}
+
 #searchUser {
   height: 40px;
 }
@@ -358,15 +362,17 @@ main {
 
 #error,
 #success {
-  width: 100%;
+  position: absolute;
   height: 40px;
+  width: 100%;
+  bottom: 10px;
   border-radius: 4px;
   color: #fff;
   text-align: center;
-  vertical-align: middle;
   display: none;
   align-items: center;
   justify-content: center;
+  padding: 1em;
 }
 
 #error {
