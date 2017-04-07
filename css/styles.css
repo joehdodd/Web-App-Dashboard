@@ -62,11 +62,22 @@ a {
   border-right: 1px solid #fff;
   padding-right: 5px;
   padding-top: 5px
+  position: relative;
 }
 
-.notifyBell img {
-  width: 30px;
-  height: 30px;
+.notifyBell svg {
+  fill: #fff;
+}
+
+.notifyBell::before {
+    position: absolute;
+    z-index: 10;
+    right: 158px;
+    content: " ";
+    width: .5em;
+    height: .5em;
+    background: #7ad38b;
+    border-radius: 50%;
 }
 
 .avatar {
@@ -93,10 +104,10 @@ a {
 .nav-list {
   display: flex;
   margin-top: 75px;
+  margin-bottom: 0px;
 }
 
 .nav-list li {
-  margin-bottom: 30px;
   width: 60px;
   padding: 1em;
 }
@@ -147,7 +158,7 @@ main {
     display: flex;
     align-items: center;
     padding: 1em;
-    margin: 20px 5px;
+    margin: 20px 0px;
     height: 40px;
     background: #6daaad;
     border-radius: 4px;
@@ -300,7 +311,7 @@ main {
 #searchUser,
 #messageUser,
 #sendMessage,
-#selectTimezone,
+#timezoneSelect,
 #saveSettings,
 #cancel {
   width: 100%;
@@ -345,7 +356,35 @@ main {
   border: none;
 }
 
-#selectTimezone {
+#error,
+#success {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#error {
+  background: tomato;
+}
+
+#success {
+  background: #4daf83;
+}
+
+#timezone {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+#timezoneSelect {
   height: 40px;
 }
 
@@ -359,7 +398,7 @@ main {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 55px;
     height: 24px;
     margin-left: auto;
 }
@@ -383,10 +422,10 @@ main {
 .slider:before {
     position: absolute;
     content: "";
-    height: 22px;
-    width: 22px;
+    height: 20px;
+    width: 20px;
     left: 4px;
-    bottom: 1px;
+    bottom: 2px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;

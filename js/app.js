@@ -1,6 +1,28 @@
-const aBar = document.getElementById('alertBar');
-aBar.addEventListener('click', (e) => {
+const alBar = document.getElementById('alertBar');
+
+alBar.addEventListener('click', (e) => {
   if (e.target.tagName === 'IMG') {
     alertBar.style.opacity = '0';
   }
+});
+
+const messageArea = document.getElementById('message');
+const messageText = document.getElementById('messageUser');
+const search = document.getElementById('searchUser');
+const send = document.getElementById('sendMessage');
+const err = document.getElementById('error');
+const succ = document.getElementById('success');
+
+messageArea.addEventListener('click', (e) => {
+  e.preventDefault();
+});
+
+send.addEventListener('click', () => {
+  if (search.value == '' || messageText.value == '') {
+    err.style.display = 'flex';
+  } else {
+    success.style.display = 'flex';
+  }
+  $('#error').delay(3500).fadeOut(1000);
+  $('#success').delay(3500).fadeOut(1000);
 });
