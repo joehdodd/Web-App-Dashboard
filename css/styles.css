@@ -1,5 +1,5 @@
 /*========================
-         GLOBALS
+GLOBALS
 ========================*/
 
 * {
@@ -23,7 +23,7 @@ a {
 
 
 /*========================
-         HEADER
+HEADER
 ========================*/
 
 .head {
@@ -70,26 +70,27 @@ a {
 }
 
 .notifyBell::before {
-    position: absolute;
-    z-index: 10;
-    left: 16px;
-    content: "";
-    width: .5em;
-    height: .5em;
-    background: #7ad38b;
-    border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  left: 16px;
+  content: "";
+  width: .5em;
+  height: .5em;
+  background: #7ad38b;
+  border-radius: 50%;
 }
 
 .notifyBell:hover::after {
-    position: absolute;
-    z-index: 11;
-    right: -24px;
-    content: attr(data);
-    width: 100px;
-    height: 100px;
-    background: #3a3a3a;
-    border-radius: 4px;
-    paddding: 1em;
+  position: absolute;
+  z-index: 11;
+  right: -24px;
+  content: attr(data);
+  width: 200px;
+  height: 150px;
+  background: rgba(58, 58, 58, 0.9);
+  border-radius: 4px;
+  padding: 1em;
+  box-shadow: 0px 4px 14px 0px #232323;
 }
 
 .avatar {
@@ -102,7 +103,7 @@ a {
 }
 
 /*========================
-          NAV
+NAV
 ========================*/
 
 #nav {
@@ -129,7 +130,7 @@ a {
 }
 
 /*========================
-        CONTAINERS
+CONTAINERS
 ========================*/
 
 main {
@@ -156,25 +157,26 @@ main {
   border-radius: 4px;
   padding: .5em;
   box-shadow: 0px 1px 4px 0px #545454;
+  max-width: 100%;
 }
 
 .flex-item {
-  flex: 1 200px;
+  flex: 1 0 100%;
 }
 
 /*========================
-          ALERT
+ALERT
 ========================*/
 
 #alertBar {
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    margin: 20px 0px;
-    height: 40px;
-    background: #546886;
-    border-radius: 4px;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  margin: 20px 0px;
+  height: 40px;
+  background: #546886;
+  border-radius: 4px;
+  color: #fff;
 }
 
 .alert1 {
@@ -182,13 +184,13 @@ main {
 }
 
 .icon-x {
-    margin-left: auto;
-    width: 20px;
-    height: 20px;
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
 }
 
 /*========================
-   DASHBOARD/SEARCHBOX
+DASHBOARD/SEARCHBOX
 ========================*/
 
 .dashboard {
@@ -211,7 +213,7 @@ main {
 }
 
 /*========================
-   CHART HEADER & LINKS
+CHART HEADER & LINKS
 ========================*/
 
 #traffic-header {
@@ -251,7 +253,7 @@ main {
 }
 
 /*========================
-      SOCIAL STATS
+SOCIAL STATS
 ========================*/
 
 .social-box {
@@ -283,7 +285,7 @@ main {
 }
 
 /*========================
-      MEMBER STATS
+MEMBER STATS
 ========================*/
 
 .inner-flex {
@@ -317,7 +319,7 @@ main {
 }
 
 /*========================
-      MSG & SETTINGS
+MSG & SETTINGS
 ========================*/
 
 #searchUser,
@@ -407,18 +409,18 @@ main {
 }
 
 .setting {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 /* The switch - the box around the slider */
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 55px;
-    height: 24px;
-    margin-left: auto;
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 24px;
+  margin-left: auto;
 }
 
 /* Hide default HTML checkbox */
@@ -438,15 +440,15 @@ main {
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 4px;
-    bottom: 2px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 input:checked + .slider {
@@ -473,7 +475,7 @@ input:checked + .slider:before {
 }
 
 /*========================
-        M QUERIES
+M QUERIES
 ========================*/
 
 @media screen and (min-width: 768px) {
@@ -502,9 +504,13 @@ input:checked + .slider:before {
     margin: 0 auto;
   }
 
+  .flex-item {
+    flex: 1 0 48%;
+    max-width: 450px;
+  }
+
   .box {
     padding: 1em;
-    margin: 20px 5px;
     background: #fff;
     border-radius: 4px;
     box-shadow: 0px 1px 2px 0px #484848;

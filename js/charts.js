@@ -69,11 +69,11 @@ let mobileTrafficChart = new Chart(mobileTraffic, {
     },
     options: {
         legend: {display: true,
-                 position: 'right',
+                 position: 'bottom',
                  labels: { boxWidth: 10, }
                 },
         cutoutPercentage: 45,
         responsive: true,
-        maintainAspectRatio: true,
+        maintainAspectRatio: true
     }
 });
