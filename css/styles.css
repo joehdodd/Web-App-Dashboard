@@ -27,7 +27,7 @@ a {
 ========================*/
 
 .head {
-  background: #6daaad;
+  background: #546886;
   color: #fff;
   height: 75px;
   position: fixed;
@@ -61,7 +61,7 @@ a {
   margin-right: 10px;
   border-right: 1px solid #fff;
   padding-right: 5px;
-  padding-top: 5px
+  padding-top: 5px;
   position: relative;
 }
 
@@ -72,12 +72,24 @@ a {
 .notifyBell::before {
     position: absolute;
     z-index: 10;
-    right: 158px;
+    left: 16px;
     content: "";
     width: .5em;
     height: .5em;
     background: #7ad38b;
     border-radius: 50%;
+}
+
+.notifyBell:hover::after {
+    position: absolute;
+    z-index: 11;
+    right: -24px;
+    content: attr(data);
+    width: 100px;
+    height: 100px;
+    background: #3a3a3a;
+    border-radius: 4px;
+    paddding: 1em;
 }
 
 .avatar {
@@ -93,8 +105,8 @@ a {
           NAV
 ========================*/
 
-.nav {
-  background: rgb(52, 91, 93);
+#nav {
+  background: #374457;
   display: flex;
   justify-content: center;
   z-index: 50;
@@ -113,7 +125,7 @@ a {
 }
 
 .activeNav {
-  border-left: 2px solid #6daaad;
+  border-left: 2px solid #546886;
 }
 
 /*========================
@@ -160,7 +172,7 @@ main {
     padding: 1em;
     margin: 20px 0px;
     height: 40px;
-    background: #6daaad;
+    background: #546886;
     border-radius: 4px;
     color: #fff;
 }
@@ -337,7 +349,7 @@ main {
 
 #saveSettings {
   margin-right: auto;
-  background: rgb(52, 91, 93);
+  background: #374457;
 }
 
 #message {
@@ -356,7 +368,7 @@ main {
 #sendMessage {
   height: 40px;
   color: #fff;
-  background: rgb(52, 91, 93);
+  background: #374457;;
   border: none;
 }
 
@@ -438,11 +450,11 @@ main {
 }
 
 input:checked + .slider {
-  background: rgb(52, 91, 93);
+  background: #374457;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px rgb(52, 91, 93);
+  box-shadow: 0 0 1px #374457;
 }
 
 input:checked + .slider:before {
@@ -470,7 +482,7 @@ input:checked + .slider:before {
     font-size: 1.25em;
   }
 
-  .nav {
+  #nav {
     height: 100vh;
     align-items: flex-start;
     position: fixed;

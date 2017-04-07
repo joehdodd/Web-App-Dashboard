@@ -7,7 +7,7 @@ let mainTrafficChart = new Chart(mainTraffic, {
             data: [150, 250, 500, 250, 200, 250, 500, 100, 250, 500, 250],
             borderWidth: 1,
             tension: 0,
-            backgroundColor: 'rgba(109, 170, 173, 0.25)',
+            backgroundColor: 'rgba(84, 104, 134, .5)',
         }]
     },
     options: {
@@ -34,7 +34,7 @@ let dailyTrafficChart = new Chart(dailyTraffic, {
             data: [75, 100, 200, 325, 150, 100, 300],
             borderWidth: 1,
             tension: 0,
-            backgroundColor: 'rgba(109, 170, 173, 0.25)',
+            backgroundColor: 'rgba(84, 104, 134, .5)',
         }]
     },
     options: {
