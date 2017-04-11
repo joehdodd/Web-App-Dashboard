@@ -102,7 +102,7 @@ HEADER
   background: rgba(58, 58, 58, 0.9);
   box-shadow: 0px 4px 14px 0px #232323;
   border-radius: 4px;
-  content: attr(data);
+  content: "You have 5 new followers";
   padding: 1em;
   font-size: .8em;
   text-align: center;

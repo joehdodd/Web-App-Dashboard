@@ -13,7 +13,7 @@
   <header class="head">
     <ul class="head-list">
       <li class="head-text"><span class="bold">Your</span><span class="light">App</span><span class="light">&trade;</span></li>
-      <li class="notifyBell" data="You have some notifications!">
+      <li class="notifyBell">
       <svg viewBox="0 0 32 32" width="30" height="30">
         <g id="_x36__6_">
         	<g>
@@ -59,17 +59,17 @@
       <!--charts-->
       <div class="container">
         <div class="box flex-item">
-          <span class="bold traffic-heading">DAILY TRAFFIC</span>
+          <h3 class="bold traffic-heading">DAILY TRAFFIC</h3>
           <canvas id="dailyChart" height="100"></canvas>
         </div>
         <div class="box flex-item">
-          <span class="bold traffic-heading">MOBILE USERS</span>
+          <h3 class="bold traffic-heading">MOBILE USERS</h3>
           <canvas id="mobileChart" height="100"></canvas>
         </div>
       </div>
       <!--social stats box-->
       <section class="box">
-        <span class="bold cont-head">SOCIAL STATS</span>
+        <h3 class="bold cont-head">SOCIAL STATS</h3>
         <div class="container">
           <div class="social-box">
             <svg class="social-icon" viewBox="-5 -8 42 42" width="60" height="60">
@@ -124,7 +124,7 @@
       <!--member activity-->
       <section class="container">
         <div class="box flex-item">
-          <span class="bold members-heading">NEW MEMBERS</span>
+          <h3 class="bold members-heading">NEW MEMBERS</h3>
           <div class="inner-flex">
             <img class="mem-img" src="img/ashley-martin.jpg" alt="Member photo">
               <div>
@@ -159,7 +159,7 @@
           </div>
         </div>
         <div class="box flex-item">
-        <span class="bold activity-heading">RECENT ACTIVITY</span>
+        <h3 class="bold activity-heading">RECENT ACTIVITY</h3>
         <div class="inner-flex">
           <img class="mem-img" src="img/ashley-martin.jpg" alt="Member photo">
             <div>
@@ -189,7 +189,7 @@
       <!--message and settings area-->
       <section class="container">
         <div class="box flex-item">
-          <span class="bold activity-heading">MESSAGE USER</span>
+          <h3 class="bold activity-heading">MESSAGE USER</h3>
           <div id="message">
             <form>
               <input id="searchUser" type="text" name="searchUser" placeholder="Search for User"><br>
@@ -201,12 +201,12 @@
           </div>
         </div>
         <div class="box flex-item">
-          <span class="bold activity-heading">SETTINGS</span>
+          <h3 class="bold activity-heading">SETTINGS</h3>
           <div class="setting">
             <span>Send Email Notifications</span>
 		        <label class="switch">
               <input type="checkbox">
-              <div class="slider round"></div>
+              <span class="slider round"></span>
             </label>
           </div>
           <div class="setting">
@@ -214,7 +214,7 @@
 		        <label class="switch">
               <input type="checkbox">
               <!--div not allowed as child of label?-->
-              <div class="slider round"></div>
+              <span class="slider round"></span>
             </label>
           </div>
           <div id="timezone">
