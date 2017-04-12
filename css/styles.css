@@ -57,16 +57,16 @@ HEADER
   font-weight: 300;
 }
 
+.notifyBell svg {
+  fill: #fff;
+}
+
 .notifyBell {
   margin-right: 10px;
   border-right: 1px solid #fff;
   padding-right: 5px;
   padding-top: 5px;
   position: relative;
-}
-
-.notifyBell svg {
-  fill: #fff;
 }
 
 .notifyBell::before {
@@ -102,7 +102,7 @@ HEADER
   background: rgba(58, 58, 58, 0.9);
   box-shadow: 0px 4px 14px 0px #232323;
   border-radius: 4px;
-  content: attr(data);
+  content: "You have 5 new followers";
   padding: 1em;
   font-size: .8em;
   text-align: center;
@@ -114,7 +114,7 @@ HEADER
 
 .avatar img {
   border-radius: 50%;
-  width: 90%%;
+  width: 90%;
 }
 
 /*========================
@@ -141,7 +141,7 @@ NAV
 }
 
 .activeNav {
-  border-left: 2px solid #546886;
+  border-left: 3px solid #546886;
 }
 
 /*========================
@@ -450,7 +450,6 @@ MSG & SETTINGS
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -462,7 +461,6 @@ MSG & SETTINGS
   left: 4px;
   bottom: 2px;
   background-color: white;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -475,8 +473,6 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
@@ -520,13 +516,12 @@ M QUERIES
   }
 
   .flex-item {
-    flex: 1 0 48%;
+    flex: 1 35%;
     max-width: 450px;
   }
 
   .box {
     padding: 1em;
-    /*margin: 10px 5px;*/
     background: #fff;
     border-radius: 4px;
     box-shadow: 0px 1px 2px 0px #484848;
@@ -541,7 +536,6 @@ M QUERIES
 
   #alertBar {
     box-shadow: 0px 1px 2px 0px #484848;
-
   }
 
   .social-stat {
