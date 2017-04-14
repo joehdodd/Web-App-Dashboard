@@ -8,22 +8,6 @@ alBar.addEventListener('click', (e) => {
   }
 });
 
-// nav
-/*const navBar = document.getElementById('nav');
-const navItem = document.querySelectorAll('nav ul');
-
-navBar.addEventListener('click', (event) => {
-  for(let i = 0; i < navItem.length; ++i) {
-    if (navItem[i].classList.contains('activeNav')) {
-      navItem[i].classList.remove('activeNav');
-    }
-    if (event.target.tagName === 'LI') {
-    event.target.classList.add('activeNav');
-    }
-  }
-});*/
-
-
 // user message area
 const messageArea = document.getElementById('message');
 const messageText = document.getElementById('messageUser');
